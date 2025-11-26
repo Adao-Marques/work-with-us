@@ -1,11 +1,15 @@
 ### Solução
 ### Carris Metropolitana — Fullstack Application
 
-Mini-aplicação Fullstack para listagem e gestão de linhas da Carris Metropolitana, implementada como parte do desafio técnico. A aplicação permite visualizar, favoritar/desfavoritar linhas e navegar para os detalhes no site oficial da CM.
+Mini-aplicação Fullstack desenvolvida como parte do desafio técnico para a Carris Metropolitana. A aplicação permite:
 
-O repositório inclui um ficheiro .env.example com todas as variáveis necessárias para o MongoDB.
+- Visualizar todas as linhas disponíveis através da API pública da Carris Metropolitana.
+- Favoritar e desfavoritar linhas, com persistência em MongoDB.
+- Navegar para a página oficial da linha no site da Carris Metropolitana.
 
-Cria o ficheiro .env a partir do exemplo:
+O repositório inclui um ficheiro `.env.example` com todas as variáveis necessárias para o MongoDB.  
+Cria o ficheiro `.env` a partir do exemplo:
+
 ```bash
 cp .env.example .env
 ```
@@ -70,7 +74,6 @@ npm run dev
 - Listar Linhas: http://localhost:3001/api/lines
 - Listar Favoritos: http://localhost:3001/api/favorites
 
-
 ### Notas de Implementação
 
 - Todos os requisitos técnicos foram cumpridos ✅
@@ -79,3 +82,9 @@ npm run dev
 - Interface responsiva, intuitiva e com feedback visual
 - Sistema de favoritos persistente em MongoDB
 - Tratamento robusto de erros e fallback quando API indisponível
+
+### Observações Finais:
+
+- Mantive o layout.tsx inalterado, conforme solicitado.
+- As decisões foram tomadas para maximizar modularidade, clareza e aderência aos requisitos do teste.
+- O repositório está pronto para ser executado localmente seguindo as instruções acima.
